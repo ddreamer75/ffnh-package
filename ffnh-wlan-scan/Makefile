@@ -29,4 +29,4 @@ define Package/$(PKG_NAME)/install
 	$(CP) $(PKG_BUILD_DIR)/luadest/* $(1)/
 endef
 
-$(eval $(call BuildPackage,gluon-autorestart))
+$(eval $(call BuildPackage,ffnh-wlan-scan))
