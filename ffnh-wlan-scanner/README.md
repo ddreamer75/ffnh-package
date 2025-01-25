@@ -4,9 +4,11 @@ With this simple program you can scan your Wi-Fi environment to assess the frequ
 It displays the received SSID, channel, and field strength.
 
 Usage:
-	wlan-scan <interface>
+
+	wlan-scan <ifname>
+ 
 (depending on the device and configuration, different interfaces are available)
 
 ## Example:
 
-        wlan-scan client1
+	wlan-scan client1
