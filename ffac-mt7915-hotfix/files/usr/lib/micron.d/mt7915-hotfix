@@ -1,2 +1,0 @@
-# run every second minute
-*/2 * * * * /lib/gluon/mt7915/reboot-on-error.sh
