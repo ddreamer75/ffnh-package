@@ -5,7 +5,7 @@
 
 # check if device has wireless interfaces
 if [ ! -d /sys/class/ieee80211 ] || [ "$(ls -l /sys/class/ieee80211/ | wc -l)" -eq 0 ]; then
-        echo 'Device hat kein WLAN.'
+        echo 'Device has no Wi-Fi interface.'
         exit
 fi
 
