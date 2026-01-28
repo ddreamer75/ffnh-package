@@ -1,4 +1,0 @@
-#!/bin/sh
-uci del_list dhcp.@dnsmasq[0].notinterface='wg_c*'
-uci add_list dhcp.@dnsmasq[0].notinterface='wg_c*'
-uci commit dhcp

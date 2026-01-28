@@ -1,2 +1,0 @@
-chain('PARKER_RADV', 'RETURN')
-rule 'FORWARD -p IPv6 -i bat0 --ip6-protocol ipv6-icmp --ip6-icmp-type router-advertisement -j PARKER_RADV'
