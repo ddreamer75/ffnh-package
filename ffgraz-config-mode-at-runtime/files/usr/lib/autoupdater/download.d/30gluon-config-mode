@@ -1,7 +1,0 @@
-#!/bin/sh
-
-# shellcheck source=/dev/null
-. /lib/gluon/autoupdater/lib.sh
-
-
-stop gluon-config-mode
