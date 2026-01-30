@@ -1,0 +1,6 @@
+package "ffnh-led-config"
+
+config "led"
+  option "sysfs"      string   (required)
+  option "brightness" uinteger (required)  # 0..100
+  list   "off_leds"   string   (optional)
