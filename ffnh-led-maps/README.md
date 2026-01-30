@@ -1,5 +1,4 @@
-
- ffnh-led-maps
+# ffnh-led-maps
 
 Drop-in LED mapping files (vendor-/model-specific allow-lists) for the LED Config Mode Wizard.
 
