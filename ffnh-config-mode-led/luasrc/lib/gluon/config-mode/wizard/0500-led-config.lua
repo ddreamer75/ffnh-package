@@ -261,7 +261,7 @@ return function(form, uci_cursor)
   -- WRITE / COMMIT
   ------------------------------------------------------------
   function f:write()
-    local pkg = "gluon-led-config"
+    local pkg = "ffnh-led-config"
     local typ = "led"
     local sid = util.first(uci_cursor:section(pkg, typ))
     if not sid then
@@ -316,5 +316,5 @@ return function(form, uci_cursor)
     uci_cursor:commit(pkg)
   end
 
-  return {"gluon-led-config"}
+  return {"ffnh-led-config"}
 end
