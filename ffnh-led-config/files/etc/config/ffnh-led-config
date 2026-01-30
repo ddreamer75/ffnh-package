@@ -1,0 +1,7 @@
+ Optional defaults; the Wizard usually writes the first config.
+# Remove or keep as sample.
+
+config led 'main'
+        # option sysfs 'ubnt:blue:dome'
+        option brightness '30'
+        # list off_leds 'ubnt:white:dome'
