@@ -1,0 +1,13 @@
+local f = Form(translate("Freifunk Nordhessen Support"))
+
+local s = f:section(Section, nil, translate(
+  "Hier kannst du den Fernzugriff des Freifunk Nordhessen e.V. aktivieren. "
+  .. "Dies aktiviert zusätzliche SSH-Schlüssel der Administratoren."
+))
+
+local o = s:option(Flag, "support_enabled",
+  translate("Unterstützung durch Freifunk Nordhessen e.V. zulassen"))
+o.default = false
+
+return f
+``
