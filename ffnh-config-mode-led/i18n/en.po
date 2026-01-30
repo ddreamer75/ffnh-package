@@ -1,0 +1,46 @@
+
+# English translations for ffnh-config-mode-led
+# This file is distributed under the same license as the ffnh-config-mode-led package.
+# Maintainer: Freifunk Nordhessen e.V. <m.hertel@freifunk-nordhessen.de>
+
+msgid ""
+msgstr ""
+"Project-Id-Version: ffnh-config-mode-led 1.0\n"
+"Report-Msgid-Bugs-To: maintainer@example.org\n"
+"POT-Creation-Date: 2026-01-30 12:00+0100\n"
+"PO-Revision-Date: 2026-01-30 12:00+0100\n"
+"Last-Translator: FF Nordhessen <maintainer@example.org>\n"
+"Language-Team: English\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: hand-crafted\n"
+
+#: luasrc/lib/gluon/config-mode/wizard/0500-led-config.lua:*
+msgid "LED Settings"
+msgstr "LED Settings"
+
+#: luasrc/lib/gluon/config-mode/wizard/0500-led-config.lua:*
+msgid ""
+"Configure the status LED color (if available) and brightness. At 0% the LED "
+"will be permanently turned off."
+msgstr ""
+"Configure the status LED color (if available) and brightness. At 0% the LED "
+"will be permanently turned off."
+
+#: luasrc/lib/gluon/config-mode/wizard/0500-led-config.lua:*
+msgid "Brightness (%)"
+msgstr "Brightness (%)"
+
+#: luasrc/lib/gluon/config-mode/wizard/0500-led-config.lua:*
+msgid "Multicolor LED group"
+msgstr "Multicolor LED group"
+
+#: luasrc/lib/gluon/config-mode/wizard/0500-led-config.lua:*
+msgid "Color"
+msgstr "Color"
+
+#: luasrc/lib/gluon/config-mode/wizard/0500-led-config.lua:*
+msgid "LED (single color)"
+msgstr "LED (single color)"
