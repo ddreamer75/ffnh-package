@@ -4,7 +4,7 @@ PKG_NAME:=ffnh-led-config
 PKG_VERSION:=1
 PKG_RELEASE:=1
 
-include $(GLUONDIR)/package/gluon.mk
+include $(TOPDIR)/../package/gluon.mk
 
 define Package/$(PKG_NAME)
   SECTION:=gluon
