@@ -1,0 +1,5 @@
+config ffnh_led_control 'main'
+	option enabled '1'
+	option leds_on '1'
+	option brightness '-1'
+	option color ''

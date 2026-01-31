@@ -1,0 +1,12 @@
+#!/bin/sh /etc/rc.common
+START=95
+
+start() {
+	/lib/ffnh-led-control/detect-json.sh >/dev/null 2>/dev/null
+	/lib/ffnh-led-control/apply.sh
+}
+
+reload() {
+	/lib/ffnh-led-control/detect-json.sh >/dev/null 2>/dev/null
+	/lib/ffnh-led-control/apply.sh
+}

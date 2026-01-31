@@ -1,0 +1,33 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "LED Control"
+msgstr "LED Steuerung"
+
+msgid "LEDs enabled"
+msgstr "LEDs aktiv"
+
+msgid "Brightness (%)"
+msgstr "Helligkeit (%)"
+
+msgid "LED color"
+msgstr "LED Farbe"
+
+msgid "Automatic / default"
+msgstr "Automatisch / Standard"
+
+msgid "No controllable LEDs available."
+msgstr "Keine steuerbaren LEDs verfügbar."
+
+msgid "Switches the device status LEDs on or off."
+msgstr "Schaltet die Status-LEDs des Geräts ein oder aus."
+
+msgid "Optional. Supported by this device."
+msgstr "Optional. Vom Gerät unterstützt."
+
+msgid "Not supported by this device."
+msgstr "Vom Gerät nicht unterstützt."
+
+msgid "Only shown if the device provides multi-color LEDs."
+msgstr "Nur sichtbar, wenn das Gerät mehrfarbige LEDs unterstützt."
