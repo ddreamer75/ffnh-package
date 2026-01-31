@@ -1,27 +1,27 @@
-# ffnh-led-control
 
-Backend package for Freifunk Nordhessen LED control.
+# ffnh-led-control (Backend)
 
-## Features
+Backend für die LED‑Steuerung auf Gluon/OpenWrt‑Nodes (Farbe, Helligkeit, Dauerzustand, Timer). Beachtet modell-/herstellerspezifische Quirks und blendet nicht sinnvoll steuerbare LEDs aus.
 
-- Vendor detection via `/tmp/sysinfo/board_name` and `/etc/board.json`
-- Generates JSON capabilities at `/tmp/ffnh-led-control.json`
-- Applies LED settings (on/off, optional brightness, optional color if supported)
-- Vendor handlers for Ubiquiti/TP-Link/Mikrotik/Zyxel with fallback generic handler
+## UCI
+```sh
+uci set ffnh_ledcontrol.status.enabled='1'
+uci set ffnh_ledcontrol.status.color='auto'      # auto|red|green|blue|amber|yellow|white
+uci set ffnh_ledcontrol.status.brightness='75'   # 0..100
+uci set ffnh_ledcontrol.status.state='on'        # on|off
+uci set ffnh_ledcontrol.status.trigger='timer'   # permanent|timer
+uci set ffnh_ledcontrol.status.delay_on='1000'   # ms
+uci set ffnh_ledcontrol.status.delay_off='1000'  # ms
+uci add_list ffnh_ledcontrol.status.exclude_glob='*:*:power'
+uci commit ffnh_ledcontrol
+/etc/init.d/ffnh-led-control reload
+```
 
-## UCI config
+## Self‑Check
+```sh
+/usr/libexec/ffnh-led-control/selfcheck.sh
+```
+Zeigt Board‑Name, steuerbare LEDs, Dimmen/Timer‑Support, aktive Quirks/Excludes, verfügbare Farben, Auto‑Farbwahl und UI‑Hinweise.
 
-File: `/etc/config/ffnh_led_control`
-
-Section: `ffnh_led_control.main`
-
-Options:
-- `enabled` (0/1)
-- `leds_on` (0/1)
-- `brightness` (-1 or 0..100)
-- `color` (string, optional: red/green/blue/white)
-
-## Maintainer
-
-Freifunk Nordhessen e.V.  
-m.hertel@freifunk-nordhessen.de
+## Lizenz & Maintainer
+GPL-2.0-or-later — Freifunk Nordhessen e.V. <m.hertel@freifunk-nordhessen.de>
