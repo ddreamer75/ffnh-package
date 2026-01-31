@@ -4,7 +4,7 @@ PKG_NAME:=ffnh-led-control-config-mode
 PKG_VERSION:=1.0
 PKG_RELEASE:=1
 
-include $(INCLUDE_DIR)/package.mk
+include $(TOPDIR)/../package/gluon.mk
 
 define Package/ffnh-led-control-config-mode
   SECTION:=gluon
